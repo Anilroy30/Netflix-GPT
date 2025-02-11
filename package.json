@@ -41,5 +41,8 @@
     "resolve-url-loader": "^5.0.0",
     "@svgr/plugin-svgo": "^6.0.0",
     "@svgr/webpack": "^6.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }

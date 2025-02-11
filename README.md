@@ -1,3 +1,33 @@
+# Netflix GPT
+
+- Create React App
+- Configured Tailwind
+
+
+# Features
+
+- Login/Sign Up
+     - Sign In / Sign Up Form
+     - redirect to Browser Page
+
+- Browse (after authentication)
+     - Header
+     - Main Movie
+           - Tailer in Background
+           - Title & Description
+           MovieSuggestions
+                - MovieLists * N
+
+- NetflixGPT
+     - Search Bar
+     - Movie Suggestions
+
+
+
+
+     
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
