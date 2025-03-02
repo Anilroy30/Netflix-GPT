@@ -17,6 +17,10 @@
     - Sign Up user Display name and Profile Picture Updated
     - If the user is not logged In Redirect Browse to Login page and vice-versa
 
+    - Unsubscribed to onAuthStateChanged callback()
+
+- Add hardcoded values to the constants file
+
 
 # Features
 
