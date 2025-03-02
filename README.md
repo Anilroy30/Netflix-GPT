@@ -3,6 +3,9 @@
 
 - Created react app
 - configured tailwindcss
+- Header
+- Sign In
+- Sign Up
 
 
 # Features
@@ -23,7 +26,7 @@
     - Search Bar
    - Movie Suggestions
 
-   
+
 
 
 
