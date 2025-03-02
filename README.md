@@ -30,6 +30,31 @@
    - Movie Suggestions
 
 
+# firebase commands for deployment:
+
+- npm install firebase
+- npm install -g firebase-tools
+- firebase login
+- firebase init
+    - y
+    - Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub
+ Action deploys
+    - after selecting enter space bar and press enter
+    - Use an existing project
+    - select the project what u want to deploy and (projects which are there in the firebase)
+    - if ur using the create-react-app then enter "build" - to use as the public directory
+    - n
+    - n
+
+    - npm run build
+
+    - firebase deploy
+
+Note:
+    Parcel uses the parcel build command to generate the "dist" folder for production builds. like that create-react-app uses build folder for production builds for all the files
+
+
+
 
 
 
