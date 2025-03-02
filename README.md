@@ -4,8 +4,11 @@
 - Created react app
 - configured tailwindcss
 - Header
-- Sign In
-- Sign Up
+- Routing of app
+- Sign In Page
+- Sign Up Page
+- Form Validations
+- Use Ref Hook
 
 
 # Features
