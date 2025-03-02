@@ -12,6 +12,10 @@
 - Firebase setup
 - Deploying our application to production using firebase
 - let's create Sign Up user Account
+- Updated Profile Account
+- Bugs fixed:
+    - Sign Up user Display name and Profile Picture Updated
+    - If the user is not logged In Redirect Browse to Login page and vice-versa
 
 
 # Features
