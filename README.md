@@ -20,6 +20,11 @@
     - Unsubscribed to onAuthStateChanged callback()
 
 - Add hardcoded values to the constants file
+- Register TMDB API & create an app & get access token
+- Get Data from TMDB now playing movies list API
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update Store with movies Data
 
 
 # Features
