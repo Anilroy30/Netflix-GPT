@@ -25,6 +25,11 @@
 - Custom Hook for Now Playing Movies
 - Create movieSlice
 - Update Store with movies Data
+- Planning for MainContainer & secondary container
+- Fetch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Youtube video and make it autoplay and mute
+- Tailwind Classes to make Main Container look awesome
 
 
 # Features
