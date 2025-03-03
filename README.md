@@ -38,6 +38,7 @@
 - usePopularMovies Custom hook
 - GPT Search Page
 - GPT Search Bar
+- Multi-language Feature in our App
 
 
 # Features
