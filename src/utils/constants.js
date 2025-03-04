@@ -28,3 +28,7 @@ export const SUPPORTED_LANGUAGES = [
         name: "Spanish"
     }
 ]
+
+
+export const OPENAI_KEY = "***REMOVED***proj-ueJp1pk2Dj-Pz6yw5hgUQ9l4aRF6To6StPDBeL-sY7dCArHmWnqYdEGVO5KQejuSaZON3qIyzlT3BlbkFJe3NGhb6K4U10j6prGoqu9Grt7yhRw0vs1fcUVSR5bX_UCbhP3sW1fD8ixJvRNcndfc4HPhzqYA"; // ✅ Correct way
+
