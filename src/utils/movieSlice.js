@@ -4,7 +4,8 @@ const movieSlice = createSlice({
     name: "movie",
     initialState: {
         nowPlayingMovies: null,
-        trailerVideo: null,
+        trailerVideo: null, // ✅ For background video on the homepage
+        watchPageTrailer: null, // ✅ Separate trailer for Watch Page
         popularMovies: null,
         topRatedMovies: null,
         upComingMovies: null,
@@ -19,7 +20,13 @@ const movieSlice = createSlice({
             state.nowPlayingMovies = action.payload;
         },
         addTrailerVideo: (state, action) => {
-            state.trailerVideo = action.payload;
+            state.trailerVideo = action.payload; // ✅ For background video
+        },
+        addWatchPageTrailer: (state, action) => {
+            state.watchPageTrailer = action.payload; // ✅ For Watch Page
+        },
+        clearWatchPageTrailer: (state) => {
+            state.watchPageTrailer = null;  // ✅ Only reset Watch Page trailer
         },
         addPopularMovies: (state, action) => {
             state.popularMovies = action.payload;
@@ -46,11 +53,13 @@ const movieSlice = createSlice({
             state.topRatedTVShows = action.payload;
         },
     }
-})
+});
 
-
-export const { addNowPlayingMovies, 
+export const { 
+    addNowPlayingMovies, 
     addTrailerVideo, 
+    addWatchPageTrailer, // ✅ New action
+    clearWatchPageTrailer, // ✅ New action
     addPopularMovies, 
     addTopRatedMovies, 
     addUpComingMovies, 
@@ -58,6 +67,7 @@ export const { addNowPlayingMovies,
     addTVShows,
     addTodayTVShows,
     addPopularTVShows,
-    addTopRatedTVShows } = movieSlice.actions;
+    addTopRatedTVShows 
+} = movieSlice.actions;
 
 export default movieSlice.reducer;

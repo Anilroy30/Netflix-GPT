@@ -4,22 +4,34 @@ import { API_OPTIONS } from "../utils/constants";
 import { useEffect } from "react";
 
 const useMovieTrailer = (movieId) => { 
-    const disPatch = useDispatch();
-    const tarilerVideo = useSelector(store => store.movies.trailerVideo)
+    const dispatch = useDispatch();
+    const trailerVideo = useSelector(store => store.movies.trailerVideo);
 
-    // fetch trailer video && updating the store with the trailer video
     const getMovieVideos = async () => {
-        const data = await fetch('https://api.themoviedb.org/3/movie/'+movieId+'/videos?language=en-US', API_OPTIONS);
-        const json = await data.json();
+        try {
+            const response = await fetch(
+                `https://api.themoviedb.org/3/movie/${movieId}/videos?language=en-US`,
+                API_OPTIONS
+            );
+            const json = await response.json();
 
-        const filterData = json.results.filter((video) => video.type === 'Trailer');
-        const trailer = filterData.length ? filterData[0] : json.results[0];
-        disPatch(addTrailerVideo(trailer));
-    }
+            if (!json.results || json.results.length === 0) {
+                console.error("No trailer found for movie ID:", movieId);
+                return;
+            }
+
+            const filteredTrailer = json.results.find(video => video.type === "Trailer") || json.results[0];
+
+            dispatch(addTrailerVideo(filteredTrailer)); // Update Redux store
+        } catch (error) {
+            console.error("Error fetching trailer:", error);
+        }
+    };
 
     useEffect(() => {
-        !tarilerVideo && getMovieVideos();
-    }, [])
-}
+        if (!movieId) return; // Prevent unnecessary API calls
+        getMovieVideos();
+    }, [movieId, dispatch]);
+};
 
 export default useMovieTrailer;

@@ -36,7 +36,7 @@ const MovieList = ({ title, movies }) => {
         <div ref={scrollRef} className='flex overflow-x-scroll no-scrollbar scroll-smooth snap-x snap-mandatory'>
           <div className='flex gap-4'>
             {movies.map((movie) => (
-              <MovieCard key={movie.id} poster_path={movie.poster_path} />
+              <MovieCard key={movie.id} id={movie.id} poster_path={movie.poster_path} />
             ))}
           </div>
         </div>
